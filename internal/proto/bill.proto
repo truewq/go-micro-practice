@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package internal;
+
+service Bill {
+	rpc GetBills(GetBillsRequest) returns (GetBillsResponse) {}
+}
+
+message GetBillsRequest {
+}
+message BillInfo{
+    string billId = 1;
+    string receiveAddr = 2;
+    int64 buyTime = 3;
+    int32 status = 4;
+    int32 goodsId = 5;
+    int32 goodsNum = 6;
+    string goodsName = 7;
+    int64 payTime = 8;
+    string postId = 9;
+    int64 postTime = 10;
+    int64 receiveTime = 11;
+}
+message GetBillsResponse {
+    int32 code = 1;
+	repeated BillInfo bills = 2;
+}
