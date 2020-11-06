@@ -13,7 +13,7 @@
 
 `make cmd=auth_api`
 
-# 3.run
+#3. run
 
 3.1 run etcd
 
@@ -46,6 +46,7 @@
 #6. login
 
 `curl -X POST "http://10.0.0.1:8180/auth/login" -H "Content-Type: application/json" -d "{ \"User\": \"tech\", \"Password\": \"share\"}"`
+
 #7. getBill
 
 `curl -X POST "http://10.0.0.1:8180/bill/getBills" -H "accept: application/json" -H "Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFeHBpcmVzQXQiOjE2MDQ2NDI2ODEsIklkIjoiMTMyNDU2MzMyOTcwMzc0MzQ4OCIsIklzc3VlciI6InRlY2ggc2hhcmUiLCJOb3RCZWZvcmUiOjE2MDQ2MzU0ODEsIlVzZXIiOiJ0ZWNoIn0.sjNWBxhnUxKJjPbvr26tVXGjFDB3NwIb23RRmnIMoVA" -H "Content-Type: application/json" -d "{}"`
