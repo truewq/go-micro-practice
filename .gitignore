@@ -19,3 +19,10 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+*.iml
+*/.iml
+.idea
+*/.idea
+
+build/package
