@@ -1,14 +1,4 @@
-<div>
-    <p align="center">
-        <img src="" width="258" height="258"/>
-        <br>
-        扫码关注有惊喜
-    </p>
-    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
-        <strong>（转载本站作品请注明作者和出处:几分钟技术分享）</strong>
-    </p>
-</div>
-
+#更多技术分享视频，请关注公众号：几分钟技术分享。
 
 #1. generate proto buffer files
 
