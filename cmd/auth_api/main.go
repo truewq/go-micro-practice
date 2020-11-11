@@ -8,11 +8,14 @@ import (
 	"github.com/micro/go-micro/v2/client"
 	"github.com/micro/go-micro/v2/util/log"
 	"github.com/micro/go-micro/v2/web"
+	"github.com/micro/go-plugins/registry/kubernetes/v2"
 )
 
 func main(){
 	service := web.NewService(
 		web.Name("tech.share.api.auth"),
+		web.Registry(kubernetes.NewRegistry()),
+		web.Address(":9200"),
 		)
 
 	service.Init()

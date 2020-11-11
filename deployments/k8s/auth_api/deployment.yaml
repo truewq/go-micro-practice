@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: tech-share
+  name: auth-api
+spec:
+  selector:
+    matchLabels:
+      app: auth-api
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: auth-api
+    spec:
+      containers:
+        - name: auth-api
+          image: inharbor.ximigame.net/ximi/tech-share/auth_api:v0.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9200
+              name: http-port
+      serviceAccountName: micro-services
+
+
