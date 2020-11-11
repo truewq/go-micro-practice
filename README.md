@@ -1,3 +1,5 @@
+#更多技术分享视频，请关注公众号：几分钟技术分享。
+
 #1. generate proto buffer files
 
 `cd scripts`
